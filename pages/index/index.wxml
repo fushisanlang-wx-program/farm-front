@@ -1,0 +1,220 @@
+<view class="container">
+  <view class="svg-demo-container" >
+
+    <text class="title-text">仙草培植</text>
+    <text class="second-title-text"> 培育人：{{UserName}} \n </text>
+  </view>
+<view wx:if="{{showField == true}}"  > 
+  <view class="page__bd page__bd_spacing">
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[0],arr[1],arr[2]]  }}" wx:key="id">
+      <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[3],arr[4],arr[5]]  }}" wx:key="id">
+        <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[6],arr[7],arr[8]]  }}" wx:key="id">
+        <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[9],arr[10],arr[11]]  }}" wx:key="id">
+        <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[12],arr[13],arr[14]]  }}" wx:key="id">
+        <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="weui-flex">
+      <block wx:for="{{[arr[15],arr[16],arr[17]]  }}" wx:key="id">
+        <view class="weui-flex__item" data-FieldId="{{item.FieldId}}" bindtap="Info"> 
+          <view wx:if="{{item.Status==0}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+              <image src="../../images/待开垦.png" class="imagesbox"></image>
+              <text class="normal-text">待开启</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==1}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/待种植.png" class="imagesbox"></image>
+            <text class="normal-text">待种植</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.Status==2}}" class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/生长.png" class="imagesbox"></image>
+            <text class="normal-text">生长中</text>
+            </view>
+          </view>
+          <view wx:else class="placeholder box  ">
+            <view class="svg-demo-container" >
+            <image src="../../images/结果.png" class="imagesbox"></image>
+            <text class="normal-text">待收获</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+
+    </view>
+  </view>
+
+</view>
+
+
+
+
+  <!--view class="weui-footer weui-footer_fixed-bottom">
+           
+           <view class="weui-footer__text" bindtap="Fu">联系开发者</view>
+           <view class="weui-footer__text" >Copyright © 2021-2022 fushisanlang.cn</view>
+       </view-->
+
+</view>

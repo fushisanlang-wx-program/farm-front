@@ -1,0 +1,4 @@
+<view class="container">
+    <view wx:for="{{14}}">{{index}}</view>
+</view>
+

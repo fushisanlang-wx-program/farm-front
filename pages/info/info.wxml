@@ -1,0 +1,53 @@
+<view class="container">
+
+    <view class="svg-demo-container" >
+
+<text class="title-text">仙草培植</text>
+<text class="second-title-text"> 培育人：{{UserName}} \n </text>
+</view>
+
+    <mp-cell value="第 {{fieldInfo.FieldId}} 块土地" class="ext-class"></mp-cell>
+
+
+    <mp-cell wx:if="{{fieldInfo.Status==2}}"  value="距离成熟：{{timeStr}}" class="ext-class"></mp-cell>
+    <mp-cell wx:if="{{fieldInfo.Status==3}}"  value="已成熟" class="ext-class"></mp-cell>
+
+ 
+ 
+    <!--view class="weui-progress">
+        <view class="weui-progress__bar">
+            <progress percent="{{process}}" stroke-width="3" />
+        </view>
+
+    </view-->
+      
+        
+    <view class="page__bd">
+        <view class="weui-btn-area"  >
+        <!--239 chanchu-->
+        <!--3 shouhuo-->
+        <!--9 shengji-->
+        <!--0 kaiqi-->
+        <!--1 zhongzhi-->
+        <!--wx:if="{{fieldInfo.Status==2}}-->
+        <button wx:if="{{fieldInfo.Status==0}}" class="weui-btn" type="primary" bindtap="changeplan">开启</button>
+        <button wx:if="{{fieldInfo.Status==1}}" class="weui-btn" type="primary" bindtap="changeplan">种植</button>
+        <button wx:if="{{fieldInfo.Status==3}}" class="weui-btn" type="primary" bindtap="changeplan">收获</button>
+        <button wx:if="{{fieldInfo.Status==9}}" class="weui-btn" type="primary" bindtap="changeplan">升级</button>
+        <button wx:if="{{fieldInfo.Status==9}}" class="weui-btn" type="default" bindtap="changeplan">收获</button>
+        <button wx:if="{{fieldInfo.Status==9}}" class="weui-btn" type="warn" bindtap="changeplan">铲除</button>
+        <button wx:if="{{fieldInfo.Status==3}}" class="weui-btn" type="warn" bindtap="changeplan">铲除</button>
+        <button wx:if="{{fieldInfo.Status==2}}" class="weui-btn" type="warn" bindtap="changeplan">铲除</button>
+      
+      
+           
+        </view>
+    </view>
+ 
+   
+     <view class="weui-footer weui-footer_fixed-bottom">
+        <view class="weui-footer__text" bindtap="Fu">联系开发者</view>
+        <view class="weui-footer__text">Copyright © 2021-2022 fushisanlang.cn</view>
+    </view>
+
+</view>

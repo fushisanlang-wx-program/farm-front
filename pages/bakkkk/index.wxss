@@ -1,0 +1,14 @@
+.container{
+    margin:0 20rpx;
+    border:1rpx solid red;
+    display: grid;
+     grid-gap:20rpx 20rpx;
+     justify-content: space-between;
+     grid-template-columns: repeat(auto-fill, 200rpx);
+
+}
+.container>view{
+    width:200rpx;
+    height:200rpx;
+    border:1rpx solid red;
+}
